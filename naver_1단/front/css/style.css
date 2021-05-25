@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/* header */
+.header .logoArea {
+  overflow: hidden;
+}
+.header .logoArea .logo {
+  padding-left: 18px;
+  float: left;
+}
+
+.header .logoArea .gnb {
+  float: right;
+}
+
+.section .contentTabMenu ul li {
+  float: left;
+  border: 1px solid red;
+}
+
+.section .contentTabMenu ul li a {
+  display: block;
+  padding: 18px 46px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.header .logoArea {
+  background: #00c73c;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.table table {
+  width: 500px;
+  border-left: 0;
+  border-right: 0;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #000;
+}
+
+thead {
+  border-bottom: 3px solid #000;
+}
+
+.col {
+  width: 90px;
+}
+
+.th_man,
+.th_woman {
+  background: #ccc;
+}
+
+/* gnb */
+.wrap .header .nav {
+  position: relative;
+  height: 40px;
+  padding: 0 10px;
+}
+
+.wrap .nav ul {
+  position: relative;
+  max-width: 414px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.wrap .nav li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+.nav li a {
+  position: relative;
+  display: block;
+  max-width: 74px;
+  height: 20px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.nav li .tabTxt {
+  position: relative;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.nav li.active .tabTxt {
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.nav li.active .tabTxt:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.nav .post {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
